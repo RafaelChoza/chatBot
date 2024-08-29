@@ -67,6 +67,9 @@ main button {
   font-weight: 600;
   font-size: 1vw;
 }
+main .clear-chat {
+  margin: 10px;
+}
 
 @media (max-width: 800px) {
   .message-title {

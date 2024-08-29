@@ -24,6 +24,7 @@ const sendButton = document.querySelector('.send-button');
 const textInput = document.querySelector('.text-input');
 const chatText = document.querySelector('.chat-text');
 const typingIndicator = document.getElementById('typing-indicator');
+const clearButton = document.querySelector('.clear-chat');
 
 function scrollToBottom() {
     chatText.scrollTop = chatText.scrollHeight;
@@ -84,6 +85,12 @@ function sendMessage() {
 };
 
 sendButton.addEventListener('click', sendMessage);
+
+function clearChat () {
+    chatText.textContent = '';
+}
+
+clearButton.addEventListener('click', clearChat)
 
 textInput.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
