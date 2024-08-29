@@ -42,6 +42,7 @@ function sendMessage() {
         divMessage.appendChild(messageTitle);
         divMessage.appendChild(messageElement);
         chatText.appendChild(divMessage);
+        scrollToBottom();
         textInput.value = '';
 
         setTimeout(() => {
