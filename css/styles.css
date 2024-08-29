@@ -66,4 +66,26 @@ main button {
   color: #fff;
   font-weight: 600;
   font-size: 1vw;
+}
+
+@media (max-width: 800px) {
+  .message-title {
+    font-size: 3vw;
+    font-weight: 600;
+  }
+  .message-style {
+    font-size: 5vw;
+    padding-left: 25px;
+  }
+  main .chat-text {
+    min-height: 80vh;
+  }
+  main .text-input {
+    width: 55%;
+    font-size: 6vw;
+  }
+  main button {
+    width: 30%;
+    font-size: 5vw;
+  }
 }/*# sourceMappingURL=styles.css.map */
